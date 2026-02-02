@@ -111,16 +111,27 @@ An LLM exploring a 3000-file codebase burns its entire context window just readi
 
 ### Experiment 1: OpenClaw #5606 (ALP-479 vs ALP-480)
 
-Same GitHub issue (OpenAI Realtime API voice mode), same 3071-file repo. One worker WITH fmm, one WITHOUT.
+Same GitHub issue (OpenAI Realtime API voice mode), same 3071-file repo. One worker WITH fmm, one WITHOUT. Analyzed by `nancy src/analyze` log analyzer (ALP-487, [PR #1](https://github.com/srobinson/nancy/pull/1)).
 
-| Metric | WITH fmm (ALP-479) | WITHOUT fmm (ALP-480) |
-|--------|-------------------|----------------------|
-| Iterations | 3 | 2 |
-| File reads | ~45 | ~60+ |
-| Token budget alert | No | Yes (65.1%) |
-| Review cycle | Full review, caught a bug | Pre-empted by token limit |
-| Outcome | Complete + review fix | Complete but less vetted |
+```
+                           Control (no fmm)    Treatment (fmm)
+Reads before first edit:   25                  40
+Navigation tokens:         ~30,292             ~15,884
+Navigation % of total:     52%                 41%
+Time to first edit:        iter1 @ 48%         iter1 @ 13%
+Sidecar lookups:           n/a                 0/55
+Total tokens:              ~58,310             ~39,111
+```
 
-One data point. Directionally interesting — fmm worker used fewer reads, stayed under budget, had headroom for review. But one experiment proves nothing. Need more pairs across different repos and issue types.
+**Findings:**
+- Treatment 33% more token-efficient overall
+- Navigation is the dominant cost center in both conditions (41-52%)
+- Treatment oriented faster (first edit at 13% vs 48% of iter1)
+- **Zero sidecar usage** — agent ignored fmm tools entirely despite availability
+- The instruction compliance problem is confirmed and is the next thing to solve
 
-### Next: Design a repeatable experiment framework using Nancy's log infrastructure.
+Full analysis: `docs/experiments/ALP-479-vs-480.md`
+
+### Next: Solve instruction compliance
+
+The harness works. The data is clear. Navigation dominates the window and fmm makes it cheaper — but only if the agent actually uses it. Three angles: task-prompt injection, tool restriction, sidecar-as-gateway. See `MEMORY_PROPOSAL.md` for details.

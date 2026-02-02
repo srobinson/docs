@@ -290,11 +290,46 @@ Two things, not one:
 
 The search tooling determines whether fmm is "slightly better than grep" or "fundamentally changes how agents navigate code."
 
-## Next Step
+## Experiment Results: The Numbers Are In
 
-Analyze Nancy logs from a multi-iteration task (e.g., ALP-76) to quantify:
-1. What % of tokens are navigation vs task vs rediscovery?
-2. What % of navigation tokens could fmm have eliminated?
-3. What % of rediscovery tokens are exact repeats of previous iteration work?
+### ALP-487: Nancy Log Analyzer
 
-This gives us the actual numbers to know where the biggest wins are.
+Built `src/analyze/` — Python module that parses raw NDJSON Nancy logs, classifies every event (navigation/fmm/task-work/boilerplate), and generates comparison tables. 90 tests. PR: https://github.com/srobinson/nancy/pull/1
+
+### ALP-479 (fmm) vs ALP-480 (no fmm) — OpenClaw #5606
+
+```
+                           Control (no fmm)    Treatment (fmm)
+Reads before first edit:   25                  40
+Navigation tokens:         ~30,292             ~15,884
+Navigation % of total:     52%                 41%
+Time to first edit:        iter1 @ 48%         iter1 @ 13%
+Sidecar lookups:           n/a                 0/55
+Total tokens:              ~58,310             ~39,111
+```
+
+### What the data proves
+
+1. **Navigation is the dominant cost.** 52% (control) and 41% (treatment) of all tokens spent on navigation. Not task work. Not boilerplate. Navigation. The thesis is directionally correct — this is where the wins are.
+
+2. **fmm condition was 33% more token-efficient** despite running more iterations (4 vs 3). Reached first edit at 13% into iter1 vs 48% for control. Oriented faster, spent less.
+
+3. **The agent completely ignored sidecars.** 0 out of 55 navigation calls used fmm tools or read `.fmm` files. The sidecars were available. The instructions were in CLAUDE.md. The agent grepped and read raw source files anyway.
+
+### What this means for the thesis
+
+The signal-to-noise thesis holds: navigation dominates the window, and compressing it would free massive headroom. But **the tooling alone isn't enough.** The agent must be *forced* to use sidecars, not merely offered them.
+
+This is the instruction compliance problem. CLAUDE.md says "read sidecars first." The agent doesn't. The instruction gets diluted by the task prompt, tool schemas, and the agent's own training priors (which favor grep/read patterns it's seen in training data).
+
+### The next wall: instruction compliance
+
+Three angles to attack:
+
+1. **Task-prompt level instructions** — not just CLAUDE.md, but embedded in every task prompt Nancy generates. "Before reading any source file, check if a .fmm sidecar exists."
+
+2. **Tool restriction** — remove raw Read/Grep from the tool set and replace with fmm-aware equivalents that check sidecars first, falling back to source only when needed.
+
+3. **Sidecar-as-gateway** — make the sidecar contain enough information that the agent doesn't need the source file for navigation at all. Only open source to edit. The sidecar IS the file for reading purposes.
+
+None of these are proven. But we now have the harness to measure them.
