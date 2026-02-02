@@ -1,0 +1,551 @@
+{
+  "control": {
+    "iterations": {
+      "nancy-ALP-480-iter1": {
+        "nav_phase": {
+          "tool_counts": {
+            "Read": 9,
+            "Bash": 8,
+            "mcp__linear-server__get_issue": 1,
+            "TodoWrite": 2
+          },
+          "tool_call_count": 20,
+          "tokens": {
+            "input": 22191,
+            "output": 2625,
+            "cache_create": 166183,
+            "cache_read": 838065
+          },
+          "token_total": 24816,
+          "unique_files": [
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/openclaw.plugin.json",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/config.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/manager.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/media-stream.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/index.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/twilio.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/runtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/webhook.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw/.nancy/tasks/ALP-480/ISSUES.md"
+          ],
+          "unique_file_count": 9,
+          "reads": 9,
+          "greps": 0,
+          "fmm_lookups": 0,
+          "raw_nav_lookups": 17
+        },
+        "work_phase": {
+          "tool_counts": {
+            "Write": 5,
+            "Edit": 24,
+            "Read": 6,
+            "TodoWrite": 3,
+            "Bash": 19,
+            "TaskOutput": 1,
+            "KillShell": 1,
+            "mcp__linear-server__update_issue": 1,
+            "Skill": 1
+          },
+          "tool_call_count": 61,
+          "tokens": {
+            "input": 111,
+            "output": 26260,
+            "cache_create": 299861,
+            "cache_read": 13221301
+          },
+          "token_total": 26371,
+          "unique_files": [
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/openclaw.plugin.json",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/config.test.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/config.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/manager.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/media-stream-realtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/index.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/openai-realtime-voice.test.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/openai-realtime-voice.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/twilio.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/realtime-config.test.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/runtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/webhook.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/scripts/test-parallel.mjs",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw/.nancy/tasks/ALP-480/ISSUES.md"
+          ],
+          "unique_file_count": 14
+        },
+        "totals": {
+          "tokens": {
+            "input": 22302,
+            "output": 28885,
+            "cache_create": 466044,
+            "cache_read": 14059366
+          },
+          "token_total": 51187,
+          "tool_calls": 81
+        },
+        "first_edit_seq": 95,
+        "has_edits": true,
+        "iteration_name": "nancy-ALP-480-iter1"
+      },
+      "nancy-ALP-480-iter2-review": {
+        "nav_phase": {
+          "tool_counts": {
+            "Bash": 1,
+            "Read": 13,
+            "TodoWrite": 2,
+            "Grep": 2
+          },
+          "tool_call_count": 18,
+          "tokens": {
+            "input": 405,
+            "output": 2308,
+            "cache_create": 118993,
+            "cache_read": 793492
+          },
+          "token_total": 2713,
+          "unique_files": [
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/config.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/manager.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/media-stream-realtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/index.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/openai-realtime-voice.test.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/openai-realtime-voice.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/twilio.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/realtime-config.test.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/runtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/webhook.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw/.nancy/tasks/ALP-480/ISSUES.md"
+          ],
+          "unique_file_count": 11,
+          "reads": 13,
+          "greps": 2,
+          "fmm_lookups": 0,
+          "raw_nav_lookups": 16
+        },
+        "work_phase": {
+          "tool_counts": {
+            "Edit": 2,
+            "Read": 1
+          },
+          "tool_call_count": 3,
+          "tokens": {
+            "input": 6,
+            "output": 1641,
+            "cache_create": 3932,
+            "cache_read": 440582
+          },
+          "token_total": 1647,
+          "unique_files": [
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/media-stream-realtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/runtime.ts"
+          ],
+          "unique_file_count": 2
+        },
+        "totals": {
+          "tokens": {
+            "input": 411,
+            "output": 3949,
+            "cache_create": 122925,
+            "cache_read": 1234074
+          },
+          "token_total": 4360,
+          "tool_calls": 21
+        },
+        "first_edit_seq": 85,
+        "has_edits": true,
+        "iteration_name": "nancy-ALP-480-iter2-review"
+      },
+      "nancy-ALP-480-iter2": {
+        "nav_phase": {
+          "tool_counts": {
+            "Read": 3,
+            "Bash": 11,
+            "mcp__linear-server__get_issue": 1,
+            "TodoWrite": 3
+          },
+          "tool_call_count": 18,
+          "tokens": {
+            "input": 34,
+            "output": 2729,
+            "cache_create": 62920,
+            "cache_read": 1027942
+          },
+          "token_total": 2763,
+          "unique_files": [
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw/.nancy/tasks/ALP-480/ISSUES.md",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw/.nancy/tasks/ALP-480/comms/worker/inbox/20260131T185107Z-001.md",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw/.nancy/tasks/ALP-480/comms/worker/inbox/20260131T185936Z-001.md"
+          ],
+          "unique_file_count": 3,
+          "reads": 3,
+          "greps": 0,
+          "fmm_lookups": 0,
+          "raw_nav_lookups": 10
+        },
+        "work_phase": {
+          "tool_counts": {},
+          "tool_call_count": 0,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "cache_create": 0,
+            "cache_read": 0
+          },
+          "token_total": 0,
+          "unique_files": [],
+          "unique_file_count": 0
+        },
+        "totals": {
+          "tokens": {
+            "input": 34,
+            "output": 2729,
+            "cache_create": 62920,
+            "cache_read": 1027942
+          },
+          "token_total": 2763,
+          "tool_calls": 18
+        },
+        "first_edit_seq": null,
+        "has_edits": false,
+        "iteration_name": "nancy-ALP-480-iter2"
+      }
+    },
+    "aggregate": {
+      "iteration_count": 3,
+      "nav_reads": 25,
+      "nav_greps": 2,
+      "nav_unique_files": [
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/openclaw.plugin.json",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/config.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/manager.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/media-stream-realtime.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/media-stream.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/index.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/openai-realtime-voice.test.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/openai-realtime-voice.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/providers/twilio.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/realtime-config.test.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/runtime.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-worktrees/nancy-ALP-480/extensions/voice-call/src/webhook.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw/.nancy/tasks/ALP-480/ISSUES.md",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw/.nancy/tasks/ALP-480/comms/worker/inbox/20260131T185107Z-001.md",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw/.nancy/tasks/ALP-480/comms/worker/inbox/20260131T185936Z-001.md"
+      ],
+      "nav_tokens": 30292,
+      "total_tokens": 58310,
+      "fmm_lookups": 0,
+      "raw_nav_lookups": 43,
+      "has_edits": true,
+      "first_edit_iteration": "nancy-ALP-480-iter1",
+      "first_edit_pct": 48,
+      "nav_unique_file_count": 15,
+      "nav_pct": 52,
+      "sidecar_ratio": "0/43"
+    }
+  },
+  "treatment": {
+    "iterations": {
+      "nancy-ALP-479-iter1": {
+        "nav_phase": {
+          "tool_counts": {
+            "Read": 28,
+            "Bash": 6,
+            "WebFetch": 2,
+            "Task": 1,
+            "TodoWrite": 2
+          },
+          "tool_call_count": 39,
+          "tokens": {
+            "input": 61,
+            "output": 2979,
+            "cache_create": 252234,
+            "cache_read": 1035595
+          },
+          "token_total": 3040,
+          "unique_files": [
+            "/Users/alphab/.claude/projects/-Users-alphab-Dev-LLM-DEV-fmm-gh-issues-openclaw-with-fmm-worktrees-nancy-ALP-479/78d7fc8d-1aa8-4cc3-a5a1-deb66c885d98/tool-results/toolu_01KN48Rg13Z3YxUjwqXSikBj.txt",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/README.md",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/index.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/openclaw.plugin.json",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/package.json",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/config.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/manager.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/manager/context.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/manager/state.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/media-stream.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/base.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/index.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/stt-openai-realtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/telnyx.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/tts-openai.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/twilio.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/response-generator.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/runtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/telephony-audio.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/types.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/webhook.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm/.nancy/tasks/ALP-479/ISSUES.md"
+          ],
+          "unique_file_count": 22,
+          "reads": 28,
+          "greps": 0,
+          "fmm_lookups": 0,
+          "raw_nav_lookups": 36
+        },
+        "work_phase": {
+          "tool_counts": {
+            "Write": 2,
+            "Edit": 22,
+            "Read": 3,
+            "TodoWrite": 3,
+            "Bash": 13,
+            "TaskOutput": 1,
+            "mcp__linear-server__get_issue": 1,
+            "mcp__linear-server__update_issue": 1
+          },
+          "tool_call_count": 46,
+          "tokens": {
+            "input": 79,
+            "output": 21015,
+            "cache_create": 79379,
+            "cache_read": 7989054
+          },
+          "token_total": 21094,
+          "unique_files": [
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/config.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/manager.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/media-stream-realtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/index.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/openai-realtime-voice.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/twilio.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/runtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/webhook.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm/.nancy/tasks/ALP-479/ISSUES.md"
+          ],
+          "unique_file_count": 9
+        },
+        "totals": {
+          "tokens": {
+            "input": 140,
+            "output": 23994,
+            "cache_create": 331613,
+            "cache_read": 9024649
+          },
+          "token_total": 24134,
+          "tool_calls": 85
+        },
+        "first_edit_seq": 151,
+        "has_edits": true,
+        "iteration_name": "nancy-ALP-479-iter1"
+      },
+      "nancy-ALP-479-iter2": {
+        "nav_phase": {
+          "tool_counts": {
+            "Read": 1,
+            "Bash": 5,
+            "mcp__linear-server__get_issue": 1,
+            "TaskOutput": 2
+          },
+          "tool_call_count": 9,
+          "tokens": {
+            "input": 16,
+            "output": 1375,
+            "cache_create": 56446,
+            "cache_read": 414382
+          },
+          "token_total": 1391,
+          "unique_files": [
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm/.nancy/tasks/ALP-479/ISSUES.md"
+          ],
+          "unique_file_count": 1,
+          "reads": 1,
+          "greps": 0,
+          "fmm_lookups": 0,
+          "raw_nav_lookups": 4
+        },
+        "work_phase": {
+          "tool_counts": {},
+          "tool_call_count": 0,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "cache_create": 0,
+            "cache_read": 0
+          },
+          "token_total": 0,
+          "unique_files": [],
+          "unique_file_count": 0
+        },
+        "totals": {
+          "tokens": {
+            "input": 16,
+            "output": 1375,
+            "cache_create": 56446,
+            "cache_read": 414382
+          },
+          "token_total": 1391,
+          "tool_calls": 9
+        },
+        "first_edit_seq": null,
+        "has_edits": false,
+        "iteration_name": "nancy-ALP-479-iter2"
+      },
+      "nancy-ALP-479-iter3-review": {
+        "nav_phase": {
+          "tool_counts": {
+            "Bash": 1,
+            "Read": 10,
+            "TodoWrite": 2
+          },
+          "tool_call_count": 13,
+          "tokens": {
+            "input": 7923,
+            "output": 2244,
+            "cache_create": 141375,
+            "cache_read": 605166
+          },
+          "token_total": 10167,
+          "unique_files": [
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/config.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/manager.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/media-stream-realtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/index.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/openai-realtime-voice.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/twilio.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/runtime.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/webhook.ts",
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm/.nancy/tasks/ALP-479/ISSUES.md"
+          ],
+          "unique_file_count": 9,
+          "reads": 10,
+          "greps": 0,
+          "fmm_lookups": 0,
+          "raw_nav_lookups": 11
+        },
+        "work_phase": {
+          "tool_counts": {
+            "Edit": 1,
+            "TodoWrite": 2,
+            "Bash": 4
+          },
+          "tool_call_count": 7,
+          "tokens": {
+            "input": 15,
+            "output": 2118,
+            "cache_create": 10071,
+            "cache_read": 1302410
+          },
+          "token_total": 2133,
+          "unique_files": [
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/runtime.ts"
+          ],
+          "unique_file_count": 1
+        },
+        "totals": {
+          "tokens": {
+            "input": 7938,
+            "output": 4362,
+            "cache_create": 151446,
+            "cache_read": 1907576
+          },
+          "token_total": 12300,
+          "tool_calls": 20
+        },
+        "first_edit_seq": 64,
+        "has_edits": true,
+        "iteration_name": "nancy-ALP-479-iter3-review"
+      },
+      "nancy-ALP-479-iter3": {
+        "nav_phase": {
+          "tool_counts": {
+            "Read": 1,
+            "Bash": 6,
+            "mcp__linear-server__get_issue": 1
+          },
+          "tool_call_count": 8,
+          "tokens": {
+            "input": 14,
+            "output": 1272,
+            "cache_create": 55422,
+            "cache_read": 333908
+          },
+          "token_total": 1286,
+          "unique_files": [
+            "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm/.nancy/tasks/ALP-479/ISSUES.md"
+          ],
+          "unique_file_count": 1,
+          "reads": 1,
+          "greps": 0,
+          "fmm_lookups": 0,
+          "raw_nav_lookups": 4
+        },
+        "work_phase": {
+          "tool_counts": {},
+          "tool_call_count": 0,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "cache_create": 0,
+            "cache_read": 0
+          },
+          "token_total": 0,
+          "unique_files": [],
+          "unique_file_count": 0
+        },
+        "totals": {
+          "tokens": {
+            "input": 14,
+            "output": 1272,
+            "cache_create": 55422,
+            "cache_read": 333908
+          },
+          "token_total": 1286,
+          "tool_calls": 8
+        },
+        "first_edit_seq": null,
+        "has_edits": false,
+        "iteration_name": "nancy-ALP-479-iter3"
+      }
+    },
+    "aggregate": {
+      "iteration_count": 4,
+      "nav_reads": 40,
+      "nav_greps": 0,
+      "nav_unique_files": [
+        "/Users/alphab/.claude/projects/-Users-alphab-Dev-LLM-DEV-fmm-gh-issues-openclaw-with-fmm-worktrees-nancy-ALP-479/78d7fc8d-1aa8-4cc3-a5a1-deb66c885d98/tool-results/toolu_01KN48Rg13Z3YxUjwqXSikBj.txt",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/README.md",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/index.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/openclaw.plugin.json",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/package.json",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/config.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/manager.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/manager/context.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/manager/state.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/media-stream-realtime.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/media-stream.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/base.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/index.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/openai-realtime-voice.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/stt-openai-realtime.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/telnyx.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/tts-openai.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/providers/twilio.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/response-generator.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/runtime.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/telephony-audio.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/types.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm-worktrees/nancy-ALP-479/extensions/voice-call/src/webhook.ts",
+        "/Users/alphab/Dev/LLM/DEV/fmm-gh-issues/openclaw-with-fmm/.nancy/tasks/ALP-479/ISSUES.md"
+      ],
+      "nav_tokens": 15884,
+      "total_tokens": 39111,
+      "fmm_lookups": 0,
+      "raw_nav_lookups": 55,
+      "has_edits": true,
+      "first_edit_iteration": "nancy-ALP-479-iter1",
+      "first_edit_pct": 13,
+      "nav_unique_file_count": 24,
+      "nav_pct": 41,
+      "sidecar_ratio": "0/55"
+    }
+  }
+}
